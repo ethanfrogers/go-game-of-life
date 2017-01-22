@@ -55,7 +55,7 @@ func evolve(world [size][size]string) [size][size]string {
 				numNeighbors++
 			}
 			//above right
-			if world[mod(i-1, size)][mod(j+1, size)] == "x" {
+			if world[mod(i-1, size)][mod(j-1, size)] == "x" {
 				numNeighbors++
 			}
 			//above left
